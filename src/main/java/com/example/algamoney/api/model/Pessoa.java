@@ -1,5 +1,6 @@
 package com.example.algamoney.api.model;
 
+import javax.persistence.Embeddable;
 import javax.persistence.Embedded;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,6 +10,7 @@ import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 
 @Entity
+@Embeddable
 @Table(name = "pessoa")
 public class Pessoa {
 
