@@ -28,7 +28,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
 		clients.inMemory()
 				.withClient("angular")
 				.secret("$2a$10$NkJMUF8AHvE7LHxX2SvB/.nSqeNhWkYkevz5WVgV9LszBFqi94VhW") // @ngul@r0
-				.scopes("read", "write")
+				.scopes("read", "write", "delete")
 				.authorizedGrantTypes("password", "refresh_token")
 				.accessTokenValiditySeconds(1800)
 				.refreshTokenValiditySeconds(3600 * 24)
